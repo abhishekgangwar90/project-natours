@@ -1,0 +1,18 @@
+.row{
+    display: flex;
+    max-width: $max-content-width;
+    flex: 1;
+    margin: 0 auto;
+
+    &:not(:last-child){
+        margin-bottom: $gutter-vertical;
+    }
+
+    .col{
+        flex: 1;
+
+        &:not(:last-child){
+            margin-right: $gutter-horizontal;
+        }
+    }
+}

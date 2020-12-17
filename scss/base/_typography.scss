@@ -4,3 +4,51 @@ body{
     line-height: 1.7;
     padding: 3rem;
 }
+
+.header{
+    &__text{
+        & h1{
+            margin-bottom: 6rem;
+            backface-visibility: hidden;
+        }
+
+        &--main{
+            font-size: 6rem;
+            font-weight: 400;
+            letter-spacing: 3.5rem;
+            display: block;
+            animation: moveInLeft 1s ease-out;
+        }
+        &--secondary{
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 1.75rem;
+            display: block;
+            animation: moveInRight 1s ease-out;
+        }
+    }
+}
+
+.heading-secondary{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+
+.heading-tertiary{
+    font-size: $font-default;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $color-text;
+}
+
+.paragraph{
+    font-size: $font-default;
+    color: $color-text;
+    margin-bottom: 2rem;
+}
