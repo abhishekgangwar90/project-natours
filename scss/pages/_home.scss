@@ -3,3 +3,13 @@
     margin-top:-10rem;
     text-align: center;
 }
+
+.section-feature{
+    margin-top:-10rem;
+    transform: skewY(-7deg);
+    background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)), url('../img/nat-4.jpg');
+
+    &>*{
+     transform: skewY(7deg);
+    }
+}

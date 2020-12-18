@@ -1,0 +1,20 @@
+.feature-card{
+    padding: 3rem;
+    border-radius: 0.3rem;
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+    text-align: center;
+    background-color: $color-white;
+    transition: transform 0.5s;
+
+    &__icon{
+        font-size: 6rem;
+        background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &:hover{
+        transform: translateY(-2rem) scale(1.05);
+    }
+}
