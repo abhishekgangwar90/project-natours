@@ -193,6 +193,77 @@ body {
   .feature-card:hover {
     transform: translateY(-2rem) scale(1.05); }
 
+.form-container {
+  height: 100%;
+  padding: 6rem;
+  width: 75%;
+  margin: 0 auto;
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/nat-10.jpg");
+  background-size: cover; }
+  .form-container .form {
+    width: 50%; }
+    .form-container .form__field input {
+      font-size: 1.4rem;
+      color: inherit;
+      font-family: inherit;
+      padding: 1.5rem 2rem;
+      border-radius: 3px;
+      display: block;
+      width: 80%;
+      border: none;
+      border-bottom: 3px solid transparent;
+      transition: all .4s; }
+      .form-container .form__field input:focus {
+        outline: none;
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+        border-bottom: 3px solid #55c57a; }
+        .form-container .form__field input:focus:invalid {
+          border-bottom: 3px solid #ff7730; }
+    .form-container .form__field label {
+      font-size: 1.4rem;
+      color: #000;
+      margin-left: 2rem;
+      position: absolute;
+      transition: all .4s; }
+    .form-container .form__field input:placeholder-shown + label {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4rem); }
+    .form-container .form__radio {
+      width: 49%;
+      display: inline-block; }
+      .form-container .form__radio input {
+        display: none; }
+      .form-container .form__radio label {
+        position: relative;
+        padding-left: 4rem;
+        padding-top: 0.4rem; }
+      .form-container .form__radio input:checked + label .radio__button::after {
+        opacity: 1;
+        visibility: visible; }
+    .form-container .form .radio__button {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      border: 3px solid #55c57a; }
+      .form-container .form .radio__button::after {
+        content: '';
+        height: 1.5rem;
+        width: 1.5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #55c57a;
+        border-radius: 50%;
+        opacity: 0;
+        visibility: hidden; }
+
 .image__composition {
   position: relative; }
   .image__composition img {
@@ -408,3 +479,6 @@ body {
   position: relative;
   padding: 15rem 0;
   text-align: center; }
+
+.section-contact {
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
